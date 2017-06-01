@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка. Вязание на заказ</title>
+  </head>
+  <body>
+  
+	<header class="page-header">
+		<div class="page-header__logo">
+			<img src="http://placehold.it" alt="">
+		</div>
+		<nav class="main-nav">
+			<span class="main-nav__toggler"></span>
+			<div class="main-nav__wrapper">
+				<ul class="main-nav__list">
+					<li class="main-nav__item"><a href="">Каталог товаров</a></li>
+					<li class="main-nav__item"><a href="">Вязание на заказ</a></li>
+					<li class="main-nav__item"><input type="search" value="Поиск по сайту"></li>
+					<li class="main-nav__item"><a href="">Корзина: пока пуста</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	
+	<main>
+		<section class="form">
+			<h1 class="form__title title-h1">Вязание на заказ</h1>
+			<p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+			<fieldset class="form__fieldset">
+				<legend class="form__legend">Тип</legend>
+				<input id="radio-1" name="radio" type="radio">
+				<label for="radio-1" class="form__radio">Аксессуар для интерьера</label>
+				<input id="radio-2" name="radio" type="radio">
+				<label for="radio-2" class="form__radio">Детская игрушка</label>
+			</fieldset>
+      <fieldset class="form__fieldset">
+				<legend class="form__legend">Цвет</legend>
+				<input id="checkbox-1" name="checkbox" type="checkbox">
+				<label for="checkbox-1" class="form__checkbox">Белый</label>
+				<input id="checkbox-2" name="checkbox" type="checkbox">
+				<label for="checkbox-2" class="form__checkbox">Серый</label>
+        <input id="checkbox-3" name="checkbox" type="checkbox">
+				<label for="checkbox-3" class="form__checkbox">«Тиффани»</label>
+				<input id="checkbox-4" name="checkbox" type="checkbox">
+				<label for="checkbox-4" class="form__checkbox">Черный</label>
+        <input id="checkbox-5" name="checkbox" type="checkbox">
+				<label for="checkbox-5" class="form__checkbox">Розовый</label>
+				<input id="checkbox-6" name="checkbox" type="checkbox">
+				<label for="checkbox-6" class="form__checkbox">Оранжевый</label>
+			</fieldset>
+      <fieldset class="form__fieldset">
+				<legend class="form__legend">ФИО</legend>
+				<label for="name" class="form__input">Имя:</label>
+        <input id="name" type="text" placeholder="Введите ваше имя*" class="form__input" required>
+        
+        <label for="surname" class="form__input-label">Фамилия:</label>
+        <input id="surname" type="text" placeholder="Укажите фамилию*" class="form__input" required>
+        
+        <label for="lastname" class="form__input-label">Отчество:</label>
+        <input id="lastname" type="text" placeholder="Отчество, если желаете">
+        
+        <label for="phone" class="form__input-label form__input-label--blue">Тел</label>
+        <input id="phone" type="tel" placeholder="+7 ХХХ ХХ ХХ*" class="form__input form__input--tel" required>
+        
+        <label for="mail" class="form__input-label form__input-label--blue">E-mail</label>
+        <input id="mail" type="email" placeholder="Ваш Email*" class="form__input form__input--mail" required>
+       </fieldset>
+       
+       <fieldset class="form__fieldset">
+        <legend class="form__legend">Доп</legend>
+        <textarea id="message" class="form__textarea">Опишите все ваши пожелания к заказу</textarea>
+			</fieldset>
+      
+      <p>*Поля обязательны для заполнения</p>
+			<a href="" class="form__btn btn">Отправить заказ</a>
+		</section>
+	</main>
+	
+	<footer class="page-footer">
+		<div class="page-footer__social social-links">
+			<a class="social-link social-link--instagram" href="">Мы в Инстаграме</a>
+			<a class="social-link social-link--instagram" href="">Мы в Фейсбуке</a>
+			<a class="social-link social-link--instagram" href="">Мы в Твиттере</a>
+		</div>
+		<div class="page-footer__copyright">
+			<p>Разработано</p>
+			<a class="page-footer__copyright-link" href="">HtmlAcademy</a>
+		</div>
+	</footer>
+
+  </body>
+</html>
