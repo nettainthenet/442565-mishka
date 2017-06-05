@@ -1,0 +1,13 @@
+.title-h1{
+  display: block;
+  width: 100.01%; /*% 320/260 = 123.07 - padding*/
+  margin-left: -11.53%; /*% 30*123.07/320 */
+  padding: 75px 11.53%; /*% 30/320 */
+  background-color: #f1f1f1;
+  font-size: 26.35px;
+  font-size: 1.7566rem;
+  line-height: 29.28px;
+  line-height: 1.952rem;
+  color: #000;
+  text-align: center;
+}

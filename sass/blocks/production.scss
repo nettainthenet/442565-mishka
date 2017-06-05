@@ -1,0 +1,28 @@
+.production{
+  width: 81.25%; /*% 260/320 */
+  margin: 30px 9.375%; /*% 30/320 */
+  border: 1px solid #ececec;
+}
+.production__title{
+  display: block;
+  margin: 30px 12.69%; /*% 33/260 */ 
+  padding-left: 55px;
+  background: url("..//img/icon-video.svg") 0% 50% no-repeat;
+  font-family: "OpenSans Bold", sans-serif;
+  font-size: 17px;
+  font-size: 1.1333rem;
+  line-height: 24px;
+  line-height: 1.6rem;
+  font-weight: bold;
+}
+.production p{
+  margin: 30px 12.69%; /*% 33/260 */
+}
+.production__btn{
+  margin-left: 12.69%;
+  margin-right: 12.69%;
+  width: 74.62%;
+  font-size: 17px;
+  font-size: 1.1333rem;
+  text-transform: lowercase;
+}

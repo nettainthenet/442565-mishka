@@ -1,0 +1,35 @@
+.week-prod{
+  width: 81.25%; /*% 260/320 */
+  padding: 0 9.375%; /*% 30/320 */
+}
+.week-prod__title-week{
+  margin-top: 10px;
+  font-size: 17px;
+  font-size: 1.1333rem;
+  line-height: 20px;
+  line-height: 1.3333rem;
+  color: #63d1bb;
+  text-transform: uppercase;
+}
+.week-prod__table{
+  width: 100%;
+}
+.week-prod__table-td{
+  height: 39px;
+  border-bottom: 1px solid #ececec;
+}
+.week-prod__table-td:first-child{
+  width: 37.69%; /*% 98/260 */
+}
+.week-prod__img{
+  display: block;
+  margin: 0 auto;
+  margin-top: 28px;
+}
+.week-prod__price{
+  font-family: "OpenSans Bold", sans-serif;
+  font-size: 17px;
+  font-size: 1.1333rem;
+  font-weight: bold;
+  text-align: center;
+}

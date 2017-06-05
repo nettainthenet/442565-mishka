@@ -3,21 +3,24 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка. Вязание на заказ</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
   
 	<header class="page-header">
-		<div class="page-header__logo">
-			<img src="http://placehold.it" alt="">
+		<div class="logo">
+			<a href="index.html" class="logo__link">
+        <img src="img/logo-mobile.svg" alt="" class="logo__img" width="86" height="35">
+      </a>
 		</div>
 		<nav class="main-nav">
 			<span class="main-nav__toggler"></span>
 			<div class="main-nav__wrapper">
 				<ul class="main-nav__list">
-					<li class="main-nav__item"><a href="">Каталог товаров</a></li>
-					<li class="main-nav__item"><a href="">Вязание на заказ</a></li>
-					<li class="main-nav__item"><input type="search" value="Поиск по сайту"></li>
-					<li class="main-nav__item"><a href="">Корзина: пока пуста</a></li>
+					<li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
+					<li class="main-nav__item main-nav__item--active">Вязание на заказ</li>
+					<li class="main-nav__item"><input type="search" placeholder="Поиск по сайту" class="main-nav__search"></li>
+					<li class="main-nav__item main-nav__item--cart"><a href="">Корзина: пока пуста</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -30,41 +33,46 @@
         <p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <fieldset class="form__fieldset">
           <legend class="form__legend">Тип</legend>
-          <input id="radio-1" name="interior" type="radio">
+          <input id="radio-1" name="interior" type="radio" class="form__input-radio">
           <label for="radio-1" class="form__radio">Аксессуар для интерьера</label>
-          <input id="radio-2" name="toys" type="radio">
+          <input id="radio-2" name="toys" type="radio" class="form__input-radio">
           <label for="radio-2" class="form__radio">Детская игрушка</label>
         </fieldset>
         <fieldset class="form__fieldset">
           <legend class="form__legend">Цвет</legend>
-          <input id="checkbox-1" name="white" type="checkbox">
+          <input id="checkbox-1" name="white" type="checkbox" class="form__input-checkbox">
           <label for="checkbox-1" class="form__checkbox">Белый</label>
-          <input id="checkbox-2" name="grey" type="checkbox">
+          <input id="checkbox-2" name="grey" type="checkbox" class="form__input-checkbox">
           <label for="checkbox-2" class="form__checkbox">Серый</label>
-          <input id="checkbox-3" name="tiffany" type="checkbox">
+          <input id="checkbox-3" name="tiffany" type="checkbox" class="form__input-checkbox">
           <label for="checkbox-3" class="form__checkbox">«Тиффани»</label>
-          <input id="checkbox-4" name="black" type="checkbox">
+          <input id="checkbox-4" name="black" type="checkbox" class="form__input-checkbox">
           <label for="checkbox-4" class="form__checkbox">Черный</label>
-          <input id="checkbox-5" name="pink" type="checkbox">
+          <input id="checkbox-5" name="pink" type="checkbox" class="form__input-checkbox">
           <label for="checkbox-5" class="form__checkbox">Розовый</label>
-          <input id="checkbox-6" name="orange" type="checkbox">
+          <input id="checkbox-6" name="orange" type="checkbox" class="form__input-checkbox">
           <label for="checkbox-6" class="form__checkbox">Оранжевый</label>
         </fieldset>
+        
         <fieldset class="form__fieldset">
           <legend class="form__legend">ФИО</legend>
-          <label for="name" class="form__input">Имя:</label>
+          <label for="name" class="form__input-label">Имя:</label>
           <input id="name" type="text" placeholder="Введите ваше имя*" class="form__input" required>
           
           <label for="surname" class="form__input-label">Фамилия:</label>
           <input id="surname" type="text" placeholder="Укажите фамилию*" class="form__input" required>
           
           <label for="lastname" class="form__input-label">Отчество:</label>
-          <input id="lastname" type="text" placeholder="Отчество, если желаете">
-          
-          <label for="phone" class="form__input-label form__input-label--blue">Тел</label>
+          <input id="lastname" type="text" placeholder="Отчество, если желаете" class="form__input">
+        </fieldset>
+        
+        <fieldset class="form__fieldset">
+          <legend class="form__legend">Тел</legend>        
           <input id="phone" type="tel" placeholder="+7 ХХХ ХХ ХХ*" class="form__input form__input--tel" required>
-          
-          <label for="mail" class="form__input-label form__input-label--blue">E-mail</label>
+        </fieldset>
+        
+        <fieldset class="form__fieldset">
+          <legend class="form__legend">E-mail</legend>
           <input id="mail" type="email" placeholder="Ваш Email*" class="form__input form__input--mail" required>
          </fieldset>
          
@@ -82,11 +90,11 @@
 	<footer class="page-footer">
 		<div class="page-footer__social social-links">
 			<a class="social-link social-link--instagram" href="">Мы в Инстаграме</a>
-			<a class="social-link social-link--instagram" href="">Мы в Фейсбуке</a>
-			<a class="social-link social-link--instagram" href="">Мы в Твиттере</a>
+			<a class="social-link social-link--fb" href="">Мы в Фейсбуке</a>
+			<a class="social-link social-link--twitter" href="">Мы в Твиттере</a>
 		</div>
 		<div class="page-footer__copyright">
-			<p>Разработано</p>
+			<span>Разработано</span>
 			<a class="page-footer__copyright-link" href="">HtmlAcademy</a>
 		</div>
 	</footer>
