@@ -1,0 +1,36 @@
+.about-us{
+  width: 81.25%; /*% 260/320 */
+  padding: 0 9.375%; /*% 30/320 */
+}
+.about-us__list{
+  list-style: none;
+  margin-top: 30px;
+}
+.about-us__item{
+  padding: 55px 0 35px 0;
+  font-family: "OpenSans Bold", sans-serif;
+  font-size: 17px;
+  font-size: 1.1333rem;
+  line-height: 20px;
+  line-height: 1.3333rem;
+  font-weight: bold;
+  &--eco{
+    background: url("../img//icon-feature-1.svg") 0% 0% no-repeat;
+  }
+  &.about-us__item--style{
+    background: url("../img//icon-feature-3.svg") 0% 0% no-repeat;
+  }
+  &--like{
+    background: url("../img//icon-feature-5.svg") 0% 0% no-repeat;
+  }
+  &--heand{
+    background: url("../img//icon-feature-2.svg") 0% 0% no-repeat;
+  }
+  &--russian{
+    background: url("../img//icon-feature-4.svg") 0% 0% no-repeat;
+  }
+  &--gift{
+    background: url("../img//icon-feature-6.svg") 0% 0% no-repeat;
+  }
+}
+
