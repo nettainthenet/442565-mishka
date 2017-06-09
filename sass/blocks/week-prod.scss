@@ -1,13 +1,15 @@
 .week-prod{
-  width: 81.25%; /*% 260/320 */
-  padding: 0 9.375%; /*% 30/320 */
+  @include container;
+  padding-bottom: 25px;
+  background: url("../img/zigzag-border.svg") 0% 100% / auto 7px repeat-x;
+}
+.week-prod__title{
+  @include title-main;
 }
 .week-prod__title-week{
   margin-top: 10px;
   font-size: 17px;
-  font-size: 1.1333rem;
   line-height: 20px;
-  line-height: 1.3333rem;
   color: #63d1bb;
   text-transform: uppercase;
 }
@@ -29,7 +31,48 @@
 .week-prod__price{
   font-family: "OpenSans Bold", sans-serif;
   font-size: 17px;
-  font-size: 1.1333rem;
   font-weight: bold;
   text-align: center;
+}
+
+@media #{$tablet-width} {
+  .week-prod{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-size: auto 17px;
+  }
+  .week-prod__title-week{
+    width: 70px;
+    text-align: center;
+  }
+  .week-prod__table-wrapper{
+    width: 43.41%; /*% 290/668 */
+  }
+  .week-prod__img{
+    width: 50%;
+    height: auto;
+    align-self: flex-start;
+  }
+}
+
+@media #{$desktop-width} {
+  .week-prod{
+    justify-content: flex-start;
+  }
+  .week-prod__title{
+    padding-left: 105px;
+    padding-top: 135px;
+    z-index: 2;
+  }
+  .week-prod__title-week{
+    order: -1;
+    padding-top: 135px;
+  }
+  .week-prod__table-td:first-child{
+    width: 95px;
+  }
+  .week-prod__img{
+    margin-top: -120px;
+  }
 }

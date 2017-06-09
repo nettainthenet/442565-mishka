@@ -3,39 +3,37 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка. Каталог</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
   
-	<header class="page-header">
-		<div class="logo">
-			<a href="index.html" class="logo__link">
-        <img src="img/logo-mobile.svg" alt="" class="logo__img" width="86" height="35">
-      </a>
-		</div>
+ <header class="page-header">
 		<nav class="main-nav">
+      <div class="main-nav__logo logo">
+        <a href="index.html" class="logo__link">
+          <img src="img/logo-mobile.svg" alt="" class="logo__img" width="86" height="35">
+        </a>
+      </div>
 			<span class="main-nav__toggler"></span>
-			<div class="main-nav__wrapper">
-				<ul class="main-nav__list">
-					<li class="main-nav__item main-nav__item--active">Каталог товаров</li>
-					<li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
-					<li class="main-nav__item"><input type="search" placeholder="Поиск по сайту" class="main-nav__search"></li>
-					<li class="main-nav__item main-nav__item--cart"><a href="">Корзина: пока пуста</a></li>
-				</ul>
-			</div>
+      <div class="main-nav__item main-nav__item--catalog main-nav__item--active">Каталог товаров</div>
+      <div class="main-nav__item main-nav__item--order"><a href="form.html">Вязание на заказ</a></div>
+      <div class="main-nav__item main-nav__item--search"><input type="search" placeholder="Поиск по сайту" class="main-nav__search"></div>
+      <div class="main-nav__item main-nav__item--cart"><a href="">Корзина: пока пуста</a></div>
+      <div class="main-nav__item main-nav__item--new"><a href="">Новые поступления</a></div>
+      <div class="main-nav__item main-nav__item--sale"><a href="">Распродажа</a></div>
 		</nav>
 	</header>
 	
 	<main>
 		<section class="catalog">
-			<h1 class="catalog__title title-h1">Каталог товаров</h1>
+			<h1 class="title-h1 catalog__title">Каталог товаров</h1>
 			<article class="product">
         <a href="" class="product__img-link"><img src="img/photo-1-mobile@1x.jpg" alt="" width="260" height="195"></a>
         <div class="product__description-wrapper">
           <h2 class="product__tittle"><a href="">Зайчик-попрыгайчик</a></h2>
           <p class="product__description">Рост 30 см, вес 200 г</p>
           <p class="product__price">1 200 руб.<a href="" class="product__cart-link">Добавить в корзину</a></p>
-          
         </div>
 			</article>
       <article class="product">
@@ -67,7 +65,7 @@
 			<form action="https://echo.htmlacademy.ru/" method="post" class="cart-form">
 			<h2 class="cart-form__title">Добавить в&nbsp;корзину</h2>
 			<fieldset class="cart-form__choose-size">
-				<legend class="cart-form__legend">Выберите размер:</legend>
+				<p class="cart-form__legend">Выберите размер:</p>
 				<input id="radio-s" name="radio" type="radio" class="cart-form__input-size">
 				<label for="radio-s" class="cart-form__size">S</label>
 				<input id="radio-m" name="radio" type="radio" class="cart-form__input-size">
@@ -75,12 +73,17 @@
 				<input id="radio-l" name="radio" type="radio" class="cart-form__input-size">
 				<label for="radio-l" class="cart-form__size">L</label>
 			</fieldset>
-			<input type="submit" value="Добавить" class="cart-form__btn btn btn--blue">
+			<input type="submit" value="Добавить" class="btn btn--blue cart-form__btn">
 			</form>
 		</div>
 	</main>
 	
 	<footer class="page-footer">
+    <div class="logo page-footer__logo">
+        <a href="index.html" class="logo__link">
+          <img src="img/logo-mobile.svg" alt="" class="logo__img" width="86" height="35">
+        </a>
+      </div>
 		<div class="page-footer__social social-links">
 			<a class="social-link social-link--instagram" href="">Мы в Инстаграме</a>
 			<a class="social-link social-link--fb" href="">Мы в Фейсбуке</a>

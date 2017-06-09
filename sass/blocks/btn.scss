@@ -1,15 +1,13 @@
 .btn{
   display: block;
-  width: 100%;
-  margin: 25px 0;
+  width: 260px;
+  margin: 25px auto;
   padding: 14px 0;
   background-color: #fff;
   border: 2px solid #444;
   font-family: "OpenSans Bold", sans-serif;
   font-size: 18px;
-  font-size: 1.2rem;
   line-height: 20px;
-  line-height: 1.3333rem;
   font-weight: bold;
   color: #444;
   text-decoration: none;
@@ -30,5 +28,12 @@
   &:hover, &:active{
     background-color: #46c1ae;
     border-color: #46c1ae;
+  }
+}
+
+@media #{$tablet-width} {
+  .btn{
+    width: 230px;
+    margin: 25px auto;
   }
 }

@@ -3,18 +3,19 @@
 /* global */
 @import "global/fonts.scss";
 @import "global/typography.scss";
+@import "global/variables.scss";
+@import "global/mixins.scss";
 
 /* blocks */
-@import "blocks/about-us.scss";
 @import "blocks/btn.scss";
+@import "blocks/title-h1.scss";
+@import "blocks/about-us.scss";
 @import "blocks/cart-form.scss";
 @import "blocks/cart-form-wrapper.scss";
 @import "blocks/catalog.scss";
 @import "blocks/contacts.scss";
-@import "blocks/first-screen.scss";
 @import "blocks/form.scss";
 @import "blocks/form-wrapper.scss";
-@import "blocks/home-title.scss";
 @import "blocks/logo.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/page-footer.scss";
@@ -24,7 +25,7 @@
 @import "blocks/reviews.scss";
 @import "blocks/social-link.scss";
 @import "blocks/social-links.scss";
-@import "blocks/title-h1.scss";
+@import "blocks/first-screen.scss";
 @import "blocks/week-prod.scss";
 
 

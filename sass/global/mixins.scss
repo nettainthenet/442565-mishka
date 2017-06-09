@@ -1,0 +1,49 @@
+@mixin tablet {
+  @media #{$tablet-width} {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media #{$desktop-width} {
+    @content;
+  }
+}
+
+@mixin container {
+  width: 81.25%; /*% 260/320 */
+  padding: 35px 9.375%; /*% 30/320 */
+  max-width: 480px;
+  margin: 0 auto;
+
+  @media #{$tablet-width} {
+   width: 86.97%; /*% 668/768 */
+   max-width: inherit;
+   padding: 60px 6.515% 70px 6.515%;
+  }
+
+  @media #{$desktop-width} {
+    width: 1050px;
+    padding: 0;
+  }
+}
+
+@mixin title-main{
+  font-size: 25px;
+  line-height: 30px;
+  color: #000;
+
+  @media #{$tablet-width} {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+
+  @media #{$desktop-width} {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+
+
