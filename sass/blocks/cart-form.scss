@@ -1,17 +1,16 @@
 .cart-form{
-  width: 81.25%; /*% 260/320 */
-  padding: 20px 9.375%; /*% 30/320 */
+  @include container;
+  padding-top: 20px;
+  padding-bottom: 20px;
   border-top: 1px solid #c7c7c7;
   box-shadow: 0px 5px 10px 0px rgba(0, 1, 1, .25);
   text-align: center;
 }
 .cart-form__title{
-  padding: 10px 0 25px 0;
+  padding-top: 10px;
   font-family: "OpenSans Bold", sans-serif;
   font-size: 25px;
-  font-size: 1.6666rem;
   line-height: 30px;
-  line-height: 2rem;
   font-weight: bold;
   text-transform: uppercase;
   color: #000;
@@ -20,7 +19,7 @@
   border: none;
 }
 .cart-form__legend{
-  margin: 0 auto;
+  margin-bottom: 30px;
 }
 .cart-form__input-size{
   display: none;
@@ -32,7 +31,6 @@
   border: 1px solid #ececec;
   font-family: "OpenSans Bold", sans-serif;
   font-size: 17px;
-  font-size: 1.1333rem;
   font-weight: bold;
   line-height: 50px;
   &:hover{
@@ -44,4 +42,23 @@
 }
 .cart-form__input-size:checked + .cart-form__size {
     border-color: #63d1bb;
+}
+
+@media #{$tablet-width} {
+  .cart-form{
+    width: 355px;
+    padding: 50px 105px;
+  }
+  .cart-form__title{
+    font-size: 30px;
+  }
+  .cart-form__legend{
+    font-size: 17px;
+  }
+  .cart-form__size{
+    width: 108px;
+  }
+  .cart-form__btn{
+    width: 350px;
+  }
 }

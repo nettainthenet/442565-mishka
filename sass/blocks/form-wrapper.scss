@@ -1,4 +1,5 @@
-.form-wrapper{
-  width: 81.25%; /*% 260/320 */
-  padding: 0 9.375%; /*% 30/320 */
+@media #{$tablet-width} { 
+ .form-wrapper{
+    margin-top: -81px;
+  }
 }

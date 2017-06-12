@@ -1,4 +1,24 @@
 .catalog{
-  width: 81.25%; /*% 260/320 */
-  margin: 0 9.375%; /*% 30/320 */
+  width: 100%;
+  padding: 0;
+  max-width: 590px;
+  margin: 0 auto;
+}
+
+@media #{$tablet-width} {
+  .catalog{
+    max-width: inherit;
+    margin-top: -81px;
+    padding-top: 0px;
+  }
+}
+
+@media #{$desktop-width} {
+  .catalog{
+    width: 1050px;
+    padding: 0 50px;
+  }
+  .catalog__title{
+    margin-left: -50px;
+  }
 }
