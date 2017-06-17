@@ -1,7 +1,7 @@
 .title-h1{
   display: block;
   width: 81.25%; /*% 260/320 */
-  padding: 75px 9.375%; /*% 30/320 */
+  padding: 73px 9.375% 75px 9.375%; /*% 30/320 */
   background-color: #f1f1f1;
   font-size: 27px;
   line-height: 30px;
@@ -13,15 +13,15 @@
   .title-h1{
     @include title-main;
     max-width: inherit;
-    padding-top: 105px;
-    padding-bottom: 85px;
+    padding-top: 100px;
+    padding-bottom: 75px;
   }
 }
 
 @media #{$desktop-width} {
   .title-h1{
     width: 1050px;
-    padding: 105px 50px;
+    padding: 98px 50px;
     margin: 0 auto;
   }
 }

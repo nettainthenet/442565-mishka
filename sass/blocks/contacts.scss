@@ -2,13 +2,14 @@
   @include container;
   width: 100%;
   padding: 0;
+  padding-bottom: 15px;
   max-width: inherit;
 }
 .contacts__title{
   width: 81.25%; /*% 260/320 */
   max-width: 480px;
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 20px;
   padding: 0 9.375%; /*% 30/320 */
   padding-top: 20px;
   font-family: "OpenSans Bold", sans-serif;
@@ -20,15 +21,16 @@
   width: 81.25%; /*% 260/320 */
   max-width: 480px;
   padding: 0 9.375%; /*% 30/320 */
-  margin: 40px auto;
+  margin: 14px auto;
 }
 .contacts__table ul{
   width: 100%;
 }
 .contacts__table li{
   display: table-cell;
-  padding: 20px 0;
+  padding: 15px 0;
   vertical-align: top;
+  line-height: 30px;
 }
 .contacts__table li:first-of-type{
   width: 77px;
@@ -50,6 +52,8 @@
   width: 100%;
   max-width: 590px;
   margin: 0 auto;
+  padding-top: 5px;
+  padding-bottom: 10px;
 }
 .contacts__map-wrapper iframe{
   width: 100%;
@@ -67,9 +71,9 @@
     @include title-main;
     width: 86.97%; /*% 668/768 */
     max-width: inherit;
-    padding: 60px 0 60px 6.515%;
+    padding: 40px 0 34px 6.515%;
     margin-right: 6.515%;
-    background: url("../img/icon-flag.svg") 100% 50% no-repeat;
+    background: url("../img/icon-flag.svg") 99.3% 50% no-repeat;
     font-size: 43px;
     line-height: 50px;
     color: #000;
@@ -87,6 +91,11 @@
   }
   .contacts__map-wrapper{
     max-width: inherit;
+    padding-top: 25px;
+  }
+  .contacts__btn{
+    margin-top: 40px;
+    margin-bottom: 56px;
   }
 }
 
@@ -97,18 +106,18 @@
     flex-direction: column;
     flex-wrap: wrap;
     height: 630px;
-    padding-bottom: 100px;
+    margin-bottom: 8px;
   }
   .contacts__title{
     width: 350px;
     margin: 0;
     margin-top: 110px;
     margin-left: 60px;
-    padding: 40px 0 40px 110px;
+    padding: 38px 0 31px 110px;
     background-position: 0% 50%;
   }
   .contacts__table{
-    width: 350px;
+    width: 290px;
     margin-left: 175px;
     padding: 0;
   }
@@ -116,11 +125,11 @@
     display: table-row;
   }
   .contacts__btn{
-    margin: 35px 0 0 175px;
+    margin: 50px 0 0 175px;
   }
   .contacts__map-wrapper{
     width: 525px;
-    margin-top: 70px;
+    margin-top: 52px;
     order: 1;
   }
 }
