@@ -3,7 +3,6 @@
   display: flex;
   flex-wrap: wrap;
   //justify-content: space-between;
-  background: url("../img/zigzag-border.svg") 0% 100% / auto 7px repeat-x;
 }
 .reviews__title{
   @include title-main;
@@ -31,28 +30,36 @@
   height: 50px;
   overflow: hidden;
   border: 1px solid #ececec;
-  color: transparent;
+  font-size: 0px;
   cursor: pointer;
   margin: 30px 0 15px 0;
-  &:hover, &:active{
-    background: #fff;
+  &:hover{
+    background-color: #fff;
+    opacity: 0.6;
+  }
+  &:active{
+    background-color: #fff;
+    opacity: 0.3;
   }
 }
 .reviews__prev{
   width: 128px;
   //border-right: none;
-  background: url("../img//icon-left-arrow.svg") 50% 50% no-repeat;
+  background: url("../img/icon-left-arrow.svg") 50% 50% no-repeat;
 }
 .reviews__next{
   width: 128px;
-  background: url("../img//icon-right-arrow.svg") 50% 50% no-repeat;
+  background: url("../img/icon-right-arrow.svg") 50% 50% no-repeat;
 }
 
 @media #{$tablet-width} {
   .reviews{
     padding-top: 78px;
     padding-bottom: 78px;
-    background: url("../img//review@1x.jpg") 0% 0% no-repeat, url("../img/zigzag-border.svg") 0% 100% / auto 17px repeat-x;
+    background: url("../img/review@1x.jpg") 0% 0% no-repeat;
+    @media #{retina} {
+      background: url("../img/review@2x.jpg") 0% 0% no-repeat;
+    }
   }
   .reviews__item p{
     margin-top: 45px;

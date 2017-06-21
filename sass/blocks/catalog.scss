@@ -10,11 +10,8 @@
 @media #{$tablet-width} {
   .catalog{
     max-width: inherit;
-    margin-top: -81px;
     padding-top: 0px;
-  }
-  .catalog__title{
-    margin-bottom: 27px;
+    margin-top: 27px;
   }
 }
 
@@ -22,8 +19,5 @@
   .catalog{
     width: 1050px;
     padding: 0 50px;
-  }
-  .catalog__title{
-    //margin-left: -50px;
   }
 }

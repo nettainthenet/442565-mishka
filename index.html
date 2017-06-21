@@ -19,7 +19,11 @@
   <header class="page-header">
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <div class="main-nav__logo logo">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
         <img src="img/logo-mobile.svg" alt="" class="logo__img" width="86" height="35">
+      </picture>
       </div>
       <span class="main-nav__toggler"></span>
       <div class="main-nav__item main-nav__item--catalog"><a href="catalog.html">Каталог товаров</a></div>
@@ -34,11 +38,14 @@
 
   <main>
     <section class="first-screen">
-      <h1 class="first-screen__title">Милые штуки ручной работы для дома</h1>
-      <ul class="first-screen__prod-list">
-        <li class="first-screen__prod-item first-screen__prod-item--interior"><a href="">Предметы<br>интерьера</a></li>
-        <li class="first-screen__prod-item first-screen__prod-item--toy"><a href="">Детские<br>игрушки</a></li>
-      </ul>
+      <div class="zigzag zigzag--fill"></div>
+      <div class="first-screen__wrapper">
+        <h1 class="first-screen__title">Милые штуки ручной работы для дома</h1>
+        <ul class="first-screen__prod-list">
+          <li class="first-screen__prod-item first-screen__prod-item--interior"><a href="">Предметы<br>интерьера</a></li>
+          <li class="first-screen__prod-item first-screen__prod-item--toy"><a href="">Детские<br>игрушки</a></li>
+        </ul>
+      </div>
     </section>
     <section class="week-prod">
       <h2 class="week-prod__title">Вязаные корзинки</h2>
@@ -60,12 +67,17 @@
           </tr>
         </table>
       </div>
-      <img src="img/triple-set-mobile@1x.jpg" alt="" class="week-prod__img" width="260" height="315">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+        <img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x"   alt="" class="week-prod__img">
+      </picture>
       <div class="week-prod__order">
         <p class="week-prod__price">Цена: 990 руб.</p>
         <a href="" class="week-prod__btn btn">Заказать</a>
       </div>
     </section>
+    <div class="zigzag"></div>
     <section class="about-us">
       <h2 class="about-us__title">Коротко о нас:</h2>
       <ul class="about-us__list">
@@ -106,6 +118,7 @@
       </div>
       <a href="" class="reviews__btn btn">Написать</a>
     </section>
+    <div class="zigzag"></div>
     <section class="contacts">
       <h2 class="contacts__title">Контакты</h2>
       <div class="contacts__table">
@@ -142,17 +155,17 @@
   </main>
 
   <footer class="page-footer">
-    <div class="logo page-footer__logo">
-        <img src="img/logo-mobile.svg" alt="" class="logo__img" width="86" height="35">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__logo"></div>
+      <div class="page-footer__social social-links">
+        <a class="social-link social-link--instagram" href="">Мы в Инстаграме</a>
+        <a class="social-link social-link--fb" href="">Мы в Фейсбуке</a>
+        <a class="social-link social-link--twitter" href="">Мы в Твиттере</a>
       </div>
-    <div class="page-footer__social social-links">
-      <a class="social-link social-link--instagram" href="">Мы в Инстаграме</a>
-      <a class="social-link social-link--fb" href="">Мы в Фейсбуке</a>
-      <a class="social-link social-link--twitter" href="">Мы в Твиттере</a>
-    </div>
-    <div class="page-footer__copyright">
-      <span>Разработано</span>
-      <a class="page-footer__copyright-link" href="">HtmlAcademy</a>
+      <div class="page-footer__copyright">
+        <span>Разработано</span>
+        <a class="page-footer__copyright-link" href="">HtmlAcademy</a>
+      </div>
     </div>
   </footer>
 

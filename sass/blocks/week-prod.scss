@@ -1,7 +1,6 @@
 .week-prod{
   @include container;
-  padding-bottom: 17px;
-  background: url("../img/zigzag-border.svg") 0% 100% / auto 7px repeat-x;
+  padding-bottom: 10px;
 }
 .week-prod__title{
   @include title-main;
@@ -41,7 +40,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    background-size: auto 17px;
   }
   .week-prod__title{
     flex-shrink: 0;
@@ -67,7 +65,7 @@
     width: 32.75%; /*% 95/290 */
   }
   .week-prod__img{
-    width: 50%;
+    width: 334px;
     flex-shrink: 0;
     height: auto;
     margin-left: 6.59%;
@@ -91,7 +89,7 @@
   .week-prod{
     //justify-content: flex-start;
     padding-top: 123px;
-    padding-bottom: 93px;
+    padding-bottom: 76px;
     position: relative;
   }
   .week-prod__title{
@@ -116,6 +114,7 @@
   }
   .week-prod__img{
     width: 525px;
+    height: auto;
     position: absolute;
     top: 15px;
     right: 0;

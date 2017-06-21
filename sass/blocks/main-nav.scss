@@ -30,6 +30,9 @@
 }
 .main-nav__item--cart a{
     background: url("../img/icon-cart.svg") 0% 50% no-repeat;
+    &:hover{
+      background-image: url("../img/icon-cart-hover.svg");
+    }
   }
 .main-nav__search{
   border: none;
@@ -172,6 +175,11 @@
     text-align: center;
     min-width: 300px;
     flex-shrink: 0;
+    padding-top: 8px;
+  }
+  .main-nav__logo img{
+    width: 149px;
+    height: 72px;
   }
   .main-nav__item--catalog{
     order: -5;

@@ -8,13 +8,31 @@
   &:hover, &:active{
     color: transparent;
   }
+  &:active{
+    opacity: 0.3;
+  }
   &--instagram{
-    background: url("../img//icon-insta.svg") 50% 50% no-repeat;
+    background: url("../img/icon-insta.svg") 50% 50% no-repeat;
   }
   &--fb{
-    background: url("../img//icon-fb.svg") 50% 50% no-repeat;
+    background: url("../img/icon-fb.svg") 50% 50% no-repeat;
   }
   &--twitter{
-    background: url("../img//icon-twitter.svg") 50% 50% no-repeat;
+    background: url("../img/icon-twitter.svg") 50% 50% no-repeat;
   }
+}
+
+.social-link--instagram:hover,
+.social-link--instagram:active{
+  background: url("../img/icon-insta-hover.svg") 50% 50% no-repeat;
+}
+
+.social-link--fb:hover,
+.social-link--fb:active{
+  background: url("../img/icon-fb-hover.svg") 50% 50% no-repeat;
+}
+
+.social-link--twitter:hover,
+.social-link--twitter:active{
+  background: url("../img/icon-twitter-hover.svg") 50% 50% no-repeat;
 }
