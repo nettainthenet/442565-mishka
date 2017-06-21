@@ -8,11 +8,8 @@
   list-style: none;
   margin-top: 30px;
 }
-.about-us .about-us__list:nth-of-type(2){
-  margin-top: 0;
-}
 .about-us__item{
-  padding: 55px 0 35px 0;
+  padding: 53px 0 30px 0;
   font-family: "OpenSans Bold", sans-serif;
   font-size: 17px;
   line-height: 20px;
@@ -36,21 +33,29 @@
     background: url("../img//icon-feature-6.svg") 0% 0% no-repeat;
   }
 }
+.about-us__item:last-child{
+  padding-bottom: 0;
+}
 .about-us__item br{
   display: none;
 }
 
 @media #{$tablet-width} {
   .about-us{
-    padding-bottom: 90px;
+    padding-top: 48px;
+    padding-bottom: 85px;
   }
   .about-us__list{
     display: inline-block;
     width: 49%;
     vertical-align: top;
+    margin-top: 50px;
   }
-  .about-us .about-us__list:nth-of-type(2){
-    margin-top: 30px;
+  .about-us__item{
+    font-size: 20px;
+    line-height: 22px;
+    padding-top: 50px;
+    padding-bottom: 61px;
   }
   .about-us__item br{
     display: inline;
@@ -66,6 +71,7 @@
     padding: 65px 175px 90px 175px;
   }
   .about-us__list{
-    width: 340px;
+    width: 346px;
+    margin-top: 52px;
   }
 }

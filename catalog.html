@@ -7,35 +7,44 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-  
- <header class="page-header">
-		<nav class="main-nav">
+
+  <!--
+  <div style="position: absolute; top: 0; margin: 0 auto; width: 100%;  height: 4000px; opacity: 0.25; z-index: 2000; background: url('preview/mishka-catalog-desktop.jpg') 50% 0% no-repeat;"></div>
+
+      mishka-catalog-mobile
+      mishka-catalog-tablet
+      mishka-catalog-desktop
+  -->
+
+  <header class="page-header">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <div class="main-nav__logo logo">
         <a href="index.html" class="logo__link">
           <img src="img/logo-mobile.svg" alt="" class="logo__img" width="86" height="35">
         </a>
       </div>
-			<span class="main-nav__toggler"></span>
-      <div class="main-nav__item main-nav__item--catalog main-nav__item--active">Каталог товаров</div>
+      <span class="main-nav__toggler"></span>
+      <div class="main-nav__item main-nav__item--catalog main-nav__item--active"><span>Каталог товаров</span></div>
       <div class="main-nav__item main-nav__item--order"><a href="form.html">Вязание на заказ</a></div>
       <div class="main-nav__item main-nav__item--search"><input type="search" placeholder="Поиск по сайту" class="main-nav__search"></div>
       <div class="main-nav__item main-nav__item--cart"><a href="">Корзина: пока пуста</a></div>
       <div class="main-nav__item main-nav__item--new"><a href="">Новые поступления</a></div>
       <div class="main-nav__item main-nav__item--sale"><a href="">Распродажа</a></div>
-		</nav>
-	</header>
-	
-	<main>
-		<section class="catalog">
-			<h1 class="title-h1 catalog__title">Каталог товаров</h1>
-			<article class="product">
+      <div class="main-nav__item main-nav__item--delivery">Бесплатная доставка по России</div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="catalog">
+      <h1 class="title-h1 catalog__title">Каталог товаров</h1>
+      <article class="product">
         <a href="" class="product__img-link"><img src="img/photo-1-mobile@1x.jpg" alt="" width="260" height="195"></a>
         <div class="product__description-wrapper">
           <h2 class="product__tittle"><a href="">Зайчик-попрыгайчик</a></h2>
           <p class="product__description">Рост 30 см, вес 200 г</p>
           <p class="product__price">1 200 руб.<a href="" class="product__cart-link">Добавить в корзину</a></p>
         </div>
-			</article>
+      </article>
       <article class="product">
         <a href="" class="product__img-link"><img src="img/photo-2-mobile@1x.jpg" alt="" width="260" height="195"></a>
         <div class="product__description-wrapper">
@@ -43,7 +52,7 @@
           <p class="product__description">Диаметр 15 см, высота 10 см</p>
           <p class="product__price">690 руб.<a href="" class="product__cart-link">Добавить в корзину</a></p>
         </div>
-			</article>
+      </article>
       <article class="product">
         <a href="" class="product__img-link"><img src="img/photo-3-mobile@1x.jpg" alt="" width="260" height="195"></a>
         <div class="product__description-wrapper">
@@ -51,49 +60,49 @@
           <p class="product__description">Диаметр 30 см, высота 30 см</p>
           <p class="product__price">1 500 руб.<a href="" class="product__cart-link">Добавить в корзину</a></p>
         </div>
-			</article>
-		</section>
-		<section class="production">
-			<h2 class="production__title">Процесс производства</h2>
-			<div class="production__video-wrapper">
+      </article>
+    </section>
+    <section class="production">
+      <h2 class="production__title">Процесс производства</h2>
+      <div class="production__video-wrapper">
         <img src="img/video-mobile@1x.jpg" alt="" width="260" height="150">
       </div>
-			<p>По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-			<a href="" class="production__btn btn">Сделать заказ</a>
-		</section>
-		<div class="cart-form-wrapper">
-			<form action="https://echo.htmlacademy.ru/" method="post" class="cart-form">
-			<h2 class="cart-form__title">Добавить в&nbsp;корзину</h2>
-			<fieldset class="cart-form__choose-size">
-				<p class="cart-form__legend">Выберите размер:</p>
-				<input id="radio-s" name="radio" type="radio" class="cart-form__input-size">
-				<label for="radio-s" class="cart-form__size">S</label>
-				<input id="radio-m" name="radio" type="radio" class="cart-form__input-size">
-				<label for="radio-m" class="cart-form__size">M</label>
-				<input id="radio-l" name="radio" type="radio" class="cart-form__input-size">
-				<label for="radio-l" class="cart-form__size">L</label>
-			</fieldset>
-			<input type="submit" value="Добавить" class="btn btn--blue cart-form__btn">
-			</form>
-		</div>
-	</main>
-	
-	<footer class="page-footer">
+      <p>По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+      <a href="" class="production__btn btn">Сделать заказ</a>
+    </section>
+    <div class="cart-form-wrapper">
+      <form action="https://echo.htmlacademy.ru/" method="post" class="cart-form">
+      <h2 class="cart-form__title">Добавить в&nbsp;корзину</h2>
+      <fieldset class="cart-form__choose-size">
+        <p class="cart-form__legend">Выберите размер:</p>
+        <input id="radio-s" name="radio" type="radio" class="cart-form__input-size">
+        <label for="radio-s" class="cart-form__size">S</label>
+        <input id="radio-m" name="radio" type="radio" class="cart-form__input-size">
+        <label for="radio-m" class="cart-form__size">M</label>
+        <input id="radio-l" name="radio" type="radio" class="cart-form__input-size">
+        <label for="radio-l" class="cart-form__size">L</label>
+      </fieldset>
+      <input type="submit" value="Добавить" class="btn btn--blue cart-form__btn">
+      </form>
+    </div>
+  </main>
+
+  <footer class="page-footer">
     <div class="logo page-footer__logo">
         <a href="index.html" class="logo__link">
           <img src="img/logo-mobile.svg" alt="" class="logo__img" width="86" height="35">
         </a>
       </div>
-		<div class="page-footer__social social-links">
-			<a class="social-link social-link--instagram" href="">Мы в Инстаграме</a>
-			<a class="social-link social-link--fb" href="">Мы в Фейсбуке</a>
-			<a class="social-link social-link--twitter" href="">Мы в Твиттере</a>
-		</div>
-		<div class="page-footer__copyright">
-			<span>Разработано</span>
-			<a class="page-footer__copyright-link" href="">HtmlAcademy</a>
-		</div>
-	</footer>
+    <div class="page-footer__social social-links">
+      <a class="social-link social-link--instagram" href="">Мы в Инстаграме</a>
+      <a class="social-link social-link--fb" href="">Мы в Фейсбуке</a>
+      <a class="social-link social-link--twitter" href="">Мы в Твиттере</a>
+    </div>
+    <div class="page-footer__copyright">
+      <span>Разработано</span>
+      <a class="page-footer__copyright-link" href="">HtmlAcademy</a>
+    </div>
+  </footer>
 
   </body>
 </html>

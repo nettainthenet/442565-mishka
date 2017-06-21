@@ -7,39 +7,47 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-  
- <header class="page-header">
-		<nav class="main-nav">
+  <!--
+    <div style="position: absolute; top: 0; margin: 0 auto; width: 100%;  height: 4000px; opacity: 0.25; z-index: 2000; background: url('preview/mishka-form-desktop.jpg') 50% 0% no-repeat;"></div>
+
+      mishka-form-mobile
+      mishka-form-tablet
+      mishka-form-desktop
+  -->
+
+  <header class="page-header">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <div class="main-nav__logo logo">
         <a href="index.html" class="logo__link">
           <img src="img/logo-mobile.svg" alt="" class="logo__img" width="86" height="35">
         </a>
       </div>
-			<span class="main-nav__toggler"></span>
+      <span class="main-nav__toggler"></span>
       <div class="main-nav__item main-nav__item--catalog"><a href="catalog.html">Каталог товаров</a></div>
-      <div class="main-nav__item main-nav__item--order main-nav__item--active">Вязание на заказ</div>
+      <div class="main-nav__item main-nav__item--order main-nav__item--active"><span>Вязание на заказ</span></div>
       <div class="main-nav__item main-nav__item--search"><input type="search" placeholder="Поиск по сайту" class="main-nav__search"></div>
       <div class="main-nav__item main-nav__item--cart"><a href="">Корзина: пока пуста</a></div>
       <div class="main-nav__item main-nav__item--new"><a href="">Новые поступления</a></div>
       <div class="main-nav__item main-nav__item--sale"><a href="">Распродажа</a></div>
-		</nav>
-	</header>
-	
-	<main>
-		<section class="form-wrapper">
+      <div class="main-nav__item main-nav__item--delivery">Бесплатная доставка по России</div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="form-wrapper">
       <h1 class="form__title title-h1">Вязание на заказ</h1>
       <form action="https://echo.htmlacademy.ru/" method="post" class="form">
         <p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <fieldset class="form__fieldset">
           <legend class="form__legend">Тип</legend>
-          <div class="form__group">
+          <div  class="form__group form__group--choose-type">
             <input id="radio-1" name="radio" type="radio" class="form__input-radio">
             <label for="radio-1" class="form__radio">Аксессуар для интерьера</label>
             <input id="radio-2" name="radio" type="radio" class="form__input-radio">
             <label for="radio-2" class="form__radio">Детская игрушка</label>
           </div>
         </fieldset>
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset form__fieldset--color">
           <legend class="form__legend">Цвет</legend>
           <div class="form__group">
             <input id="checkbox-1" name="white" type="checkbox" class="form__input-checkbox">
@@ -56,64 +64,60 @@
             <label for="checkbox-6" class="form__checkbox">Оранжевый</label>
           </div>
         </fieldset>
-        
+
         <fieldset class="form__fieldset">
           <legend class="form__legend">ФИО</legend>
-          <div class="form__group">
+          <div class="form__group form__group--fio">
             <label for="name" class="form__input-label">Имя:</label>
             <input id="name" type="text" placeholder="Введите ваше имя*" class="form__input" required>
-            
+
             <label for="surname" class="form__input-label">Фамилия:</label>
             <input id="surname" type="text" placeholder="Укажите фамилию*" class="form__input" required>
-            
+
             <label for="lastname" class="form__input-label">Отчество:</label>
             <input id="lastname" type="text" placeholder="Отчество, если желаете" class="form__input">
           </div>
         </fieldset>
-        
-        <fieldset class="form__fieldset">
+
+        <fieldset class="form__fieldset form__fieldset--tel">
           <legend class="form__legend">Тел</legend>
-          <div class="form__group">
-            <input id="phone" type="tel" placeholder="+7 ХХХ ХХ ХХ*" class="form__input form__input--tel" required>
-          </div>
+          <input id="phone" type="tel" placeholder="+7 ХХХ ХХ ХХ*" class="form__input form__input--tel" required>
         </fieldset>
-        
-        <fieldset class="form__fieldset">
+
+        <fieldset class="form__fieldset form__fieldset--mail">
           <legend class="form__legend">E-mail</legend>
-          <div class="form__group">
-            <input id="mail" type="email" placeholder="Ваш Email*" class="form__input form__input--mail" required>
-          </div>
-         </fieldset>
-         
-         <fieldset class="form__fieldset">
-          <legend class="form__legend">Доп</legend>
-          <div class="form__group">
-            <textarea id="message" class="form__textarea">Опишите все ваши пожелания к заказу</textarea>
-          </div>
+          <input id="mail" type="email" placeholder="Ваш Email*" class="form__input form__input--mail" required>
         </fieldset>
-        
-        <p class="form__required-text">*Поля обязательны для заполнения</p>
-        <a href="" class="btn form__btn">Отправить заказ</a>
+
+        <fieldset class="form__fieldset">
+          <legend class="form__legend">Доп</legend>
+          <textarea id="message" class="form__textarea">Опишите все ваши пожелания к заказу</textarea>
+        </fieldset>
+
+        <div class="form__btn-wrapper">
+          <p class="form__required-text">*Поля обязательны для заполнения</p>
+          <a href="" class="btn form__btn">Отправить заказ</a>
+        </div>
       </form>
     </section>
-	</main>
-	
-	<footer class="page-footer">
+  </main>
+
+  <footer class="page-footer">
     <div class="logo page-footer__logo">
         <a href="index.html" class="logo__link">
           <img src="img/logo-mobile.svg" alt="" class="logo__img" width="86" height="35">
         </a>
       </div>
-		<div class="page-footer__social social-links">
-			<a class="social-link social-link--instagram" href="">Мы в Инстаграме</a>
-			<a class="social-link social-link--fb" href="">Мы в Фейсбуке</a>
-			<a class="social-link social-link--twitter" href="">Мы в Твиттере</a>
-		</div>
-		<div class="page-footer__copyright">
-			<span>Разработано</span>
-			<a class="page-footer__copyright-link" href="">HtmlAcademy</a>
-		</div>
-	</footer>
+    <div class="page-footer__social social-links">
+      <a class="social-link social-link--instagram" href="">Мы в Инстаграме</a>
+      <a class="social-link social-link--fb" href="">Мы в Фейсбуке</a>
+      <a class="social-link social-link--twitter" href="">Мы в Твиттере</a>
+    </div>
+    <div class="page-footer__copyright">
+      <span>Разработано</span>
+      <a class="page-footer__copyright-link" href="">HtmlAcademy</a>
+    </div>
+  </footer>
 
   </body>
 </html>

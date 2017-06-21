@@ -1,4 +1,6 @@
 .catalog{
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
   padding: 0;
   max-width: 590px;
@@ -11,6 +13,9 @@
     margin-top: -81px;
     padding-top: 0px;
   }
+  .catalog__title{
+    margin-bottom: 27px;
+  }
 }
 
 @media #{$desktop-width} {
@@ -19,6 +24,6 @@
     padding: 0 50px;
   }
   .catalog__title{
-    margin-left: -50px;
+    //margin-left: -50px;
   }
 }
