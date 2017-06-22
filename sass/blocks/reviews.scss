@@ -125,8 +125,8 @@
   }
 }
 
-@media (min-width: 768px) and (min-resolution: 144dpi),
-       (min-width: 768px) and (min-resolution: 1.5dppx) {
+@media  (min-width: 768px) and (min-resolution: 144dpi),
+        (min-width: 768px) and (min-resolution: 1.5dppx) {
     .reviews__wrapper{
       background: url("../img/review@2x.jpg") 0% 0% no-repeat;
       background-size: 350px auto;
