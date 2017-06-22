@@ -1,9 +1,7 @@
-@import "normalize.scss";
-
 /* global */
-@import "global/variables.scss";
 @import "global/fonts.scss";
-@import "global/typography.scss";
+@import "global/variables.scss";
+@import "global/normalize.scss";
 @import "global/mixins.scss";
 
 /* blocks */
@@ -27,3 +25,4 @@
 @import "blocks/social-links.scss";
 @import "blocks/first-screen.scss";
 @import "blocks/week-prod.scss";
+@import "blocks/zigzag.scss";

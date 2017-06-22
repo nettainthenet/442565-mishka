@@ -1,7 +1,13 @@
-.week-prod{
+.week-prod__wrapper{
   @include container;
-  padding-bottom: 17px;
-  background: url("../img/zigzag-border.svg") 0% 100% / auto 7px repeat-x;
+  padding-bottom: 10px;
+}
+.week-prod::after{
+  display: block;
+  content: " ";
+  width: 100%;
+  height: 7px;
+  background: url("../img/bg-zigzag-line.svg") 0% 100% / auto 7px repeat-x;
 }
 .week-prod__title{
   @include title-main;
@@ -30,18 +36,20 @@
   margin-top: 28px;
 }
 .week-prod__price{
-  font-family: "OpenSans Bold", sans-serif;
   font-size: 17px;
   font-weight: bold;
   text-align: center;
 }
 
 @media #{$tablet-width} {
-  .week-prod{
+  .week-prod::after{
+    height: 17px;
+    background-size: auto 17px;
+  }
+  .week-prod__wrapper{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    background-size: auto 17px;
   }
   .week-prod__title{
     flex-shrink: 0;
@@ -67,7 +75,7 @@
     width: 32.75%; /*% 95/290 */
   }
   .week-prod__img{
-    width: 50%;
+    width: 334px;
     flex-shrink: 0;
     height: auto;
     margin-left: 6.59%;
@@ -88,10 +96,10 @@
 }
 
 @media #{$desktop-width} {
-  .week-prod{
+  .week-prod__wrapper{
     //justify-content: flex-start;
     padding-top: 123px;
-    padding-bottom: 93px;
+    padding-bottom: 76px;
     position: relative;
   }
   .week-prod__title{
@@ -116,6 +124,7 @@
   }
   .week-prod__img{
     width: 525px;
+    height: auto;
     position: absolute;
     top: 15px;
     right: 0;
