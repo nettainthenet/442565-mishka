@@ -1,10 +1,25 @@
 html,
 body{
-  font-family: "OpenSans Regular", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: $font;
   font-size: 15px;
   line-height: 24px;
   color: #444444;
 }
+h1,
+h2,
+h3,
+p,
+ul,
+td,
+blockquote,
+fieldset,
+legend{
+  margin: 0;
+  padding: 0;
+}
+
 a{
   color: #000;
   &:hover{
@@ -14,14 +29,26 @@ a{
     color: rgba(0,0,0,.3);
   }
 }
+
 h1,
 h2,
 h3{
-  font-family: "OpenSans Bold", sans-serif;
   font-weight: 700;
 }
+
 p{
   margin-top: 25px;
+}
+
+.visuallyhidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 @media #{$tablet-width} {
