@@ -115,16 +115,31 @@
   }
   .main-nav__item--search{
     order: -2;
-    width: 22px;
+    width: 82px;
     height: 87px;
     line-height: 85px;
     margin-left: auto;
-    padding: 0 30px;
+    padding: 0;
+  }
+  .main-nav__search{
+    display: block;
+    padding: 0 41px;
+    line-height: 85px;
     border-left: 1px solid #ececec;
     border-right: 1px solid #ececec;
+    background-position: 50% 50%;
   }
   .main-nav__search::placeholder{
     color: transparent;
+  }
+  .main-nav__search:focus{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 1000;
+    background-position: 95% 50%;
   }
   .main-nav__item--cart{
     order: -1;
