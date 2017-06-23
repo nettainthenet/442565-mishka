@@ -17,7 +17,7 @@
 }
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx){
   .first-screen__wrapper{
-    background-image: url("../img/hero-mobile@2x.jpg");
+    background: url("../img/hero-mobile@2x.jpg") 50% 0% / auto 370px no-repeat #f9f9f9;
   }
 }
 
@@ -28,7 +28,7 @@
   margin: 0 auto;
   padding: 0 9.375%; /*% 30/320 */
   padding-top: 75px;
-  font-size: 27.5px;
+  font-size: 27px;
   line-height: 30px;
   text-align: center;
   color: #000;
@@ -80,11 +80,6 @@
 .first-screen__prod-item--toy a{
   background: url("../img/icon-toy.svg") 100% 50% no-repeat;
 }
-@media (min-width: 370px) {
-  .first-screen{
-    //background-size: 100% auto;
-  }
-}
 
 @media #{$tablet-width} {
   .first-screen{
@@ -95,10 +90,10 @@
   .first-screen::after{
     content: " ";
     display: block;
-    margin-top: -35px;
-    height: 35px;
+    margin-top: -10px;
+    height: 23px;
     background-image: url("../img/bg-zigzag-fill.svg");
-    background-size: auto 35px;
+    background-size: auto 22.7px;
     z-index: 50;
     position: relative;
   }
@@ -138,14 +133,19 @@
   }
   .first-screen__prod-item a{
     height: 110px;
-    font-size: 20px;
+    font-size: 21px;
     line-height: 30px;
   }
 }
 
 @media #{$desktop-width} {
+  .first-screen::after{
+    margin-top: -20px;
+    height: 34px;
+    background-size: auto 34px;
+  }
   .first-screen__wrapper{
-    background-size: 1250px auto;
+    background-size: 1150px auto;
     background-position: 50% 65%;
     width: 1050px;
     padding: 0 50px;
@@ -154,6 +154,7 @@
     width: 700px;
     padding: 0;
     padding-top: 152px;
+    font-size: 53px;
   }
   .first-screen__prod-item{
     width: 449px;

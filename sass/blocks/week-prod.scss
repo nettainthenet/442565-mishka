@@ -74,12 +74,12 @@
   .week-prod__table-td:first-child{
     width: 32.75%; /*% 95/290 */
   }
-  .week-prod__img{
+  .week-prod__wrapper picture{
     width: 334px;
     flex-shrink: 0;
     height: auto;
-    margin-left: 6.59%;
-    margin-top: 55px;
+    margin-left: auto;
+    margin-top: 30px;
   }
   .week-prod__order{
     width: 43.41%; /*% 290/668 */
@@ -98,7 +98,7 @@
 @media #{$desktop-width} {
   .week-prod__wrapper{
     //justify-content: flex-start;
-    padding-top: 123px;
+    padding-top: 110px;
     padding-bottom: 76px;
     position: relative;
   }
@@ -122,16 +122,18 @@
   .week-prod__table-td:first-child{
     width: 95px;
   }
-  .week-prod__img{
+  .week-prod__wrapper picture{
     width: 525px;
     height: auto;
-    position: absolute;
-    top: 15px;
-    right: 0;
+    margin-top: -110px;
+    padding-left: 20px;
+  }
+  .week-prod__img{
+    margin-top: 0;
   }
   .week-prod__order{
     width: 100%;
-    margin-top: 80px;
+    width: 290px;
   }
   .week-prod__price{
     width: 290px;

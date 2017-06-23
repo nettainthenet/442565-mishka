@@ -1,4 +1,4 @@
-.catalog{
+.catalog__wrapper{
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -9,14 +9,17 @@
 
 @media #{$tablet-width} {
   .catalog{
+    margin-top: -81px;
+  }
+  .catalog__wrapper{
     max-width: inherit;
     padding-top: 0px;
-    margin-top: 27px;
+    margin-top: 12px;
   }
 }
 
 @media #{$desktop-width} {
-  .catalog{
+  .catalog__wrapper{
     width: 1050px;
     padding: 0 50px;
   }

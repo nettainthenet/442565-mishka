@@ -15,46 +15,54 @@
   font-weight: bold;
   &--eco{
     background: url("../img//icon-feature-1.svg") 0% 0% no-repeat;
+    background-position: 10px 0px;
   }
-  &.about-us__item--style{
+  &--style{
     background: url("../img//icon-feature-3.svg") 0% 0% no-repeat;
   }
   &--like{
     background: url("../img//icon-feature-5.svg") 0% 0% no-repeat;
+    background-position: 10px 5px;
   }
   &--heand{
     background: url("../img//icon-feature-2.svg") 0% 0% no-repeat;
+    background-position: 2px 0px;
   }
   &--russian{
     background: url("../img//icon-feature-4.svg") 0% 0% no-repeat;
+    background-position: 0px 5px;
   }
   &--gift{
     background: url("../img//icon-feature-6.svg") 0% 0% no-repeat;
+    background-position: 2px 0px;
   }
 }
 .about-us__item:last-child{
   padding-bottom: 0;
 }
-.about-us__item br{
+/*.about-us__item br{
   display: none;
-}
+}*/
 
 @media #{$tablet-width} {
   .about-us{
-    padding-top: 48px;
+    padding-top: 50px;
     padding-bottom: 85px;
   }
   .about-us__list{
     display: inline-block;
     width: 49%;
     vertical-align: top;
-    margin-top: 50px;
+    margin-top: 54px;
   }
   .about-us__item{
     font-size: 20px;
     line-height: 22px;
-    padding-top: 50px;
-    padding-bottom: 61px;
+    padding-top: 48px;
+    padding-bottom: 63px;
+    &--russian{
+      background-position: 0px 0px;
+    }
   }
   .about-us__item br{
     display: inline;

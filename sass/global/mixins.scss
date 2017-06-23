@@ -1,4 +1,4 @@
-@mixin tablet {
+/*@mixin tablet {
   @media #{$tablet-width} {
     @content;
   }
@@ -8,7 +8,7 @@
   @media #{$desktop-width} {
     @content;
   }
-}
+}*/
 
 @mixin container {
   width: 81.25%; /*% 260/320 */
@@ -19,7 +19,7 @@
   @media #{$tablet-width} {
     width: 86.97%; /*% 668/768 */
     max-width: inherit;
-    padding: 45px 6.515% 70px 6.515%;
+    padding: 30px 6.515% 50px 6.515%;
   }
 
   @media #{$desktop-width} {
