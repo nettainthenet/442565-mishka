@@ -71,7 +71,7 @@
   flex-shrink: 0;
   margin-right: 23px;
   vertical-align: middle;
-  border: 1px solid #444;
+  border: 2px solid #444;
 }
 .form__radio:hover::before,
 .form__checkbox:hover::before{
@@ -106,7 +106,7 @@
   margin-bottom: 19px;
   color: #000;
   border: none;
-  border-bottom: 1px solid #000;
+  border-bottom: 2px solid #000;
   vertical-align: middle;
   &:hover, &:focus{
     border-color: #62d1ba;
@@ -148,7 +148,7 @@
   height: 115px;
   margin-top: 32px;
   padding: 12px 5.76%; /*% 15/260 */
-  border: 1px solid #444;
+  border: 2px solid #444;
   font-size: 17px;
   line-height: 18px;
   color: rgba(68,68,68,.3);
