@@ -10,14 +10,30 @@
   display: block;
   margin: 24px 12.69% 25px 12.69%; /*% 33/260 */
   padding-left: 55px;
-  background: url("..//img/icon-video.svg") 0% 50% no-repeat;
+  background: url("../img/icon-video.svg") 0% 50% no-repeat;
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
 }
+.production__video-wrapper{
+  position: relative;
+}
 .production__video-wrapper img{
   display: block;
   margin: 0 auto;
+}
+.production__video-button{
+  display: block;
+  width: 100px;
+  height: 77px;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: url("../img/icon-play.svg") 50% 50% no-repeat;
 }
 .production p{
   margin: 27px 12.69% 25px 12.69%; /*% 33/260 */
