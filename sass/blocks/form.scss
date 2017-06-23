@@ -6,12 +6,12 @@
   font-size: 17px;
 }
 .form p{
-  font-size: 13px;
+  font-size: 13.5px;
 }
 .form__fieldset{
   /*display: flex;
   flex-wrap: wrap;*/
-  margin-top: 18px;
+  margin-top: 25px;
   margin-bottom: 28px;
   border: none;
   border-top: 1px solid #62d1ba;
@@ -20,6 +20,9 @@
 }
 .form .form__fieldset:last-of-type{
   margin-bottom: 0;
+}
+.form .form__fieldset:first-of-type{
+  margin-top: 18px;
 }
 .form__fieldset *:last-child{
   margin-bottom: 0;
