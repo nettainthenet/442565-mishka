@@ -9,10 +9,10 @@
   width: 81.25%; /*% 260/320 */
   max-width: 480px;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 10px;
   padding: 0 9.375%; /*% 30/320 */
   padding-top: 20px;
-  font-size: 18px;
+  font-size: 1px;
   font-weight: bold;
 }
 .contacts__table{
@@ -70,10 +70,9 @@
     @include title-main;
     width: 86.97%; /*% 668/768 */
     max-width: inherit;
-    padding: 40px 0 34px 6.515%;
+    padding: 50px 0 34px 6.515%;
     margin-right: 6.515%;
-    background: url("../img/icon-flag.svg") 99.3% 50% no-repeat;
-    font-size: 43px;
+    background: url("../img/icon-flag.svg") 99.3% 70% no-repeat;
     line-height: 50px;
     color: #000;
   }
@@ -124,7 +123,7 @@
     display: table-row;
   }
   .contacts__btn{
-    margin: 50px 0 0 175px;
+    margin: 20px 0 0 175px;
   }
   .contacts__map-wrapper{
     width: 525px;
