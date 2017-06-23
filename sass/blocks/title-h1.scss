@@ -3,7 +3,7 @@
   width: 81.25%; /*% 260/320 */
   padding: 73px 9.375% 75px 9.375%; /*% 30/320 */
   background-color: #f1f1f1;
-  font-size: 28px;
+  font-size: 27px;
   line-height: 30px;
   color: #000;
   text-align: center;
@@ -13,8 +13,8 @@
   .title-h1{
     @include title-main;
     max-width: inherit;
-    padding-top: 98px;
-    padding-bottom: 90px;
+    padding-top: 95px;
+    padding-bottom: 95px;
     border-top: 1px solid #ececec;
     background: url("../img/bg-zigzag-fill.svg") 0% 100% / auto 22.6px repeat-x, #f1f1f1;
   }
@@ -24,7 +24,7 @@
   .title-h1{
     width: 100%;
     padding: 97px 0 120px 0;
-    font-size: 56px;
     background-size: auto 34px;
+    font-size: 53px;
   }
 }

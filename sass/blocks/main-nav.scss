@@ -10,7 +10,7 @@
   &--active{
     width: 67.195%; /*% 215/320 */
     padding: 0 9.375% 0 17.3%; /*% 30/320 75/320 */
-    font-size: 18px;
+    font-size: 17px;
     font-weight: bold;
     color: #000;
     line-height: 80px;
@@ -21,7 +21,7 @@
   width: 82.7%; /*% 215/260 */
   padding-left: 17.3%; /*% 45/260 */
   height: 80px;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: bold;
   line-height: 80px;
   text-decoration: none;
@@ -39,7 +39,7 @@
   padding-left: 17.3%; /*% 45/260 */
   height: 80px;
   background: url("../img/icon-search.svg") 0% 50% no-repeat;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: bold;
   line-height: 80px;
 }
@@ -106,7 +106,7 @@
   .main-nav__item--catalog span,
   .main-nav__item--order a,
   .main-nav__item--order span{
-    font-size: 16px;
+    font-size: 15px;
     line-height: 65px;
     display: block;
   }
@@ -157,7 +157,7 @@
     display: block;
     margin-left: auto;
     text-align: right;
-    font-size: 15.5px;
+    font-size: 15px;
     line-height: 63px;
   }
   .main-nav .main-nav__item--new,
@@ -186,7 +186,7 @@
   .main-nav__logo{
     order: -3;
     text-align: center;
-    min-width: 300px;
+    min-width: 280px;
     flex-shrink: 0;
     padding-top: 8px;
     padding-right: 20px;
@@ -197,24 +197,24 @@
   }
   .main-nav__item--catalog{
     order: -5;
-    height: 87px;
+    height: 85px;
     padding-right: 35px;
     border-right: 1px solid #ececec;
   }
   .main-nav__item--catalog span,
   .main-nav__item--catalog a{
-    font-size: 18px;
+    font-size: 17px;
     height: 85px;
-    line-height: 85px;
+    line-height: 80px;
   }
   .main-nav__item--order{
     order: -4;
-    height: 87px;
+    height: 85px;
     margin-right: auto;
   }
   .main-nav__item--order span,
   .main-nav__item--order a{
-    font-size: 18px;
+    font-size: 17px;
     height: 85px;
     line-height: 85px;
   }
@@ -222,15 +222,15 @@
     display: block;
   }
   .main-nav__item--new a{
-    font-size: 16px;
-    line-height: 65px;
+    font-size: 15px;
+    line-height: 63px;
   }
   .main-nav .main-nav__item--sale{
     display: block;
     margin-left: 60px;
   }
   .main-nav__item--sale a{
-    font-size: 16px;
-    line-height: 65px;
+    font-size: 15px;
+    line-height: 63px;
   }
 }
