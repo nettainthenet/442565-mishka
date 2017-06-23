@@ -29,9 +29,9 @@
   text-decoration: none;
   font-size: 19px;
   line-height: 34px;
-  background: url("../img/logo-htmlacademy.svg") 100% 100% no-repeat;
+  background: url("../img/logo-htmlacademy.svg") 100% 50% no-repeat;
   &:hover, &:active{
-    background: url("../img/logo-htmlacademy-hover.svg") 50% 100% no-repeat;
+    background: url("../img/logo-htmlacademy-hover.svg") 100% 50% no-repeat;
   }
   &:active{
     opacity: 0.3;
@@ -73,6 +73,7 @@
   .page-footer__copyright{
     width: 180px;
     margin: 0;
+    margin-top: 5px;
     text-align: right;
   }
 }
@@ -82,9 +83,9 @@
     width: 1050px;
     padding: 50px;
   }
-  /*.page-footer__copyright span{
-    line-height: 42px;
-  }*/
+  .page-footer__copyright{
+    margin-top: 0;
+  }
   .page-footer__copyright-link{
     margin-top: 7px;
   }

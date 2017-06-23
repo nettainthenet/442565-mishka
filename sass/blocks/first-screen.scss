@@ -28,7 +28,7 @@
   margin: 0 auto;
   padding: 0 9.375%; /*% 30/320 */
   padding-top: 75px;
-  font-size: 29px;
+  font-size: 27px;
   line-height: 30px;
   text-align: center;
   color: #000;
@@ -79,11 +79,6 @@
 }
 .first-screen__prod-item--toy a{
   background: url("../img/icon-toy.svg") 100% 50% no-repeat;
-}
-@media (min-width: 370px) {
-  .first-screen{
-    //background-size: 100% auto;
-  }
 }
 
 @media #{$tablet-width} {
@@ -159,7 +154,7 @@
     width: 700px;
     padding: 0;
     padding-top: 152px;
-    font-size: 56px;
+    font-size: 53px;
   }
   .first-screen__prod-item{
     width: 449px;
