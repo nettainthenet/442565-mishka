@@ -22,23 +22,15 @@
   font-weight: bold;
   color: #000;
 }
-.page-footer__copyright span{
-  display: inline-block;
-  height: 34px;
-  font-size: 19px;
-  line-height: 34px;
-  vertical-align: top;
-}
 .page-footer__copyright-link{
   display: inline-block;
-  width: 27px;
+  padding-right: 60px;
   height: 34px;
-  margin-left: 25px;
-  overflow: hidden;
-  background: url("../img/logo-htmlacademy.svg") 50% 100% no-repeat;
-  color: transparent;
+  text-decoration: none;
+  font-size: 19px;
+  line-height: 34px;
+  background: url("../img/logo-htmlacademy.svg") 100% 100% no-repeat;
   &:hover, &:active{
-    color: transparent;
     background: url("../img/logo-htmlacademy-hover.svg") 50% 100% no-repeat;
   }
   &:active{
@@ -50,9 +42,8 @@
   .page-footer__wrapper{
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
-    padding-top: 55px;
-    padding-bottom: 43px;
+    align-items: center;
+    padding: 50px 0;
   }
   .page-footer__logo{
     display: block;
@@ -76,6 +67,7 @@
   .page-footer__social{
     width: 180px;
     padding: 0;
+    padding-top: 5px;
     border: none;
   }
   .page-footer__copyright{
