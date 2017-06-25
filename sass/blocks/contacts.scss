@@ -104,7 +104,11 @@
     flex-direction: column;
     flex-wrap: wrap;
     height: 630px;
+    margin: 0 auto;
     margin-bottom: 8px;
+    max-width: inherit;
+    padding: 0;
+    width: 1050px;
   }
   .contacts__title{
     width: 350px;
@@ -112,10 +116,11 @@
     margin-top: 110px;
     margin-left: 60px;
     padding: 38px 0 31px 110px;
-    background-position: 0% 50%;
+    background-position: 0% 65%;
+    box-sizing: border-box;
   }
   .contacts__table{
-    width: 290px;
+    width: 300px;
     margin-left: 175px;
     padding: 0;
   }
@@ -123,11 +128,12 @@
     display: table-row;
   }
   .contacts__btn{
-    margin: 20px 0 0 175px;
+    margin: 50px 0 0 175px;
   }
   .contacts__map-wrapper{
     width: 525px;
     margin-top: 52px;
+    margin-right: 5px;
     order: 1;
   }
 }

@@ -104,9 +104,17 @@
 }
 
 @media #{$desktop-width} {
+    .reviews::after{
+    height: 21px;
+    background-size: 1050px auto;
+    background-position: 15% 100%;
+  }
   .reviews__wrapper{
     width: 875px;
     padding: 72px 0 105px 175px;
+  }
+  .reviews__item p{
+    width: 775px;
   }
   .reviews__item .reviews__author{
     width: 350px;

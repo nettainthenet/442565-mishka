@@ -46,6 +46,9 @@
 
 @media #{$tablet-width} {
   .about-us{
+    padding: 0;
+    margin: 0 auto;
+    min-width: 668px;
     padding-top: 50px;
     padding-bottom: 85px;
   }
@@ -75,7 +78,7 @@
 @media #{$desktop-width} {
   .about-us{
     width: 700px;
-    padding: 65px 175px 90px 175px;
+    padding: 60px 175px 90px 175px;
   }
   .about-us__list{
     width: 346px;

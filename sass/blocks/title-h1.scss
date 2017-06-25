@@ -1,8 +1,13 @@
 .title-h1{
+  background-color: #f1f1f1;
+  text-align: center;
+}
+.title-h1 h1{
   display: block;
   width: 81.25%; /*% 260/320 */
-  padding: 73px 9.375% 75px 9.375%; /*% 30/320 */
-  background-color: #f1f1f1;
+  min-width: 260px;
+  padding: 73px 0 75px 0;
+  margin: 0 auto;
   font-size: 27px;
   line-height: 30px;
   color: #000;
@@ -11,20 +16,24 @@
 
 @media #{$tablet-width} {
   .title-h1{
+    border-top: 1px solid #ececec;
+    background: url("../img/bg-zigzag-fill.svg") 50% 100% / auto 23px repeat-x, #f1f1f1;
+  }
+  .title-h1 h1{
     @include title-main;
     max-width: inherit;
-    padding-top: 95px;
+    padding-top: 90px;
     padding-bottom: 95px;
-    border-top: 1px solid #ececec;
-    background: url("../img/bg-zigzag-fill.svg") 0% 100% / auto 22.6px repeat-x, #f1f1f1;
   }
 }
 
 @media #{$desktop-width} {
   .title-h1{
     width: 100%;
-    padding: 97px 0 120px 0;
     background-size: auto 34px;
+  }
+  .title-h1 h1{
+    padding: 93px 0 120px 0;
     font-size: 53px;
   }
 }

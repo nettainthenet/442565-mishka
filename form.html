@@ -37,9 +37,11 @@
 
   <main>
     <section class="form-wrapper">
-      <h1 class="title-h1">Вязание на заказ</h1>
+      <div class="title-h1">
+        <h1>Вязание на заказ</h1>
+      </div>
       <form action="https://echo.htmlacademy.ru/" method="post" class="form">
-        <p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <p class="form__glade-text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <fieldset class="form__fieldset">
           <div class="form__fieldset-wrapper">
             <div class="form__legend">Тип</div>
@@ -93,21 +95,27 @@
         <fieldset class="form__fieldset form__fieldset--tel form__fieldset--color">
           <div class="form__fieldset-wrapper">
             <div class="form__legend">Тел</div>
-            <input id="phone" type="tel" placeholder="+7 ХХХ ХХ ХХ*" class="form__input form__input--tel" required>
+            <div class="form__group">
+              <input id="phone" type="tel" placeholder="+7 ХХХ ХХ ХХ*" class="form__input form__input--tel" required>
+            </div>
           </div>
         </fieldset>
 
         <fieldset class="form__fieldset form__fieldset--mail form__fieldset--color">
           <div class="form__fieldset-wrapper">
             <div class="form__legend">E-mail</div>
-            <input id="mail" type="email" placeholder="Ваш Email*" class="form__input form__input--mail" required>
+            <div class="form__group">
+              <input id="mail" type="email" placeholder="Ваш Email*" class="form__input form__input--mail" required>
+            </div>
           </div>
         </fieldset>
 
         <fieldset class="form__fieldset form__fieldset--add">
           <div class="form__fieldset-wrapper">
             <div class="form__legend">Доп</div>
-            <textarea id="message" class="form__textarea">Опишите все ваши пожелания к заказу</textarea>
+            <div class="form__group">
+              <textarea id="message" class="form__textarea">Опишите все ваши пожелания к заказу</textarea>
+            </div>
           </div>
         </fieldset>
 
