@@ -42,6 +42,9 @@
   font-size: 17px;
   font-weight: bold;
   line-height: 80px;
+    &:hover, &:active, &:focus{
+      background: url("../img/icon-search-hover.svg") 0% 50% no-repeat;
+  };
 }
 .main-nav__search::placeholder{
   color: #000;
@@ -142,13 +145,13 @@
     color: transparent;
   }
   .main-nav__search:focus{
-    position: absolute;
+    /*position: absolute;
     width: 100%;
     top: 0;
     left: 0;
     background-color: #fff;
     z-index: 1000;
-    background-position: 95% 50%;
+    background-position: 95% 50%;*/
   }
   .main-nav__item--cart{
     order: -1;
