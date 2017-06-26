@@ -142,9 +142,9 @@
 
 @media #{$desktop-width} {
   .first-screen::after{
-    margin-top: -20px;
+    margin-top: -17px;
     height: 34px;
-    background-size: 1050px auto;
+    background-size: auto 34px;
   }
   .first-screen__wrapper{
     background-size: 1150px auto;
