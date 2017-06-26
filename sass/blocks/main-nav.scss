@@ -140,6 +140,9 @@
     border-right: 1px solid #ececec;
     background-position: 48% 50%;
     width: 1px;
+    &:hover, &:active, &:focus{
+      background-position: 48% 50%;
+    }
   }
   .main-nav__search::placeholder{
     color: transparent;
